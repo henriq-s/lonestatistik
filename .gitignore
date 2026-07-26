@@ -1,0 +1,23 @@
+# Virtuell miljö – installeras lokalt av var och en, ska aldrig i repot
+.venv/
+
+# Python-skräp
+__pycache__/
+*.py[cod]
+
+# Streamlit – hemligheter ska ALDRIG publiceras
+.streamlit/secrets.toml
+
+# Verktygs- och editorfiler (innehåller lokala sökvägar)
+.claude/
+.vscode/
+.idea/
+
+# Operativsystemets filer
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# OBS: mappen data/ ligger MED i repot med flit.
+# Appen läser sina Parquet-filer därifrån och hämtar aldrig från
+# SCB:s API när den körs. Utan dem startar inte appen i molnet.
